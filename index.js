@@ -1,13 +1,13 @@
-/* ユークリッド互助法 */
+//ソート前の配列データ
+let array = [7, 3, 10, 5, 1];
 
-const gcm = (a, b) => {
-  while (a === b) {
-    if (a > b) {
-      a = a - b;
-    } else {
-      b = b - a;
+for (let outer = 0; outer < array.length - 1; outer++) {
+  console.log(outer + 1 + "周目");
+  for (let i = array.length - 1; i > outer; i--) {
+    if (array[i] < array[i - 1]) {
+      let tmp = array[i];
+      array[i] = array[i - 1];
+      array[i - 1] = tmp;
     }
   }
-  return a;
-};
-console.log(gcm(21, 84));
+}
