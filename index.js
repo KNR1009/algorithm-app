@@ -1,4 +1,3 @@
-//ソート前の配列データ
 let array = [7, 3, 10, 5, 1];
 
 for (let outer = 0; outer < array.length - 1; outer++) {
