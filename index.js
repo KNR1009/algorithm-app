@@ -1,4 +1,4 @@
-let array = [7, 3, 10, 5, 1];
+let array = [7, 3, 10, 5, 1.3, 4];
 
 for (let outer = 0; outer < array.length - 1; outer++) {
   console.log(outer + 1 + "周目");
